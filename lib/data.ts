@@ -145,14 +145,14 @@ export type PricingPlan = {
 export const PRICING_PLANS: PricingPlan[] = [
   {
     title: "Own-MC Carrier",
-    rate: "5% – 8%",
+    rate: "3% – 8%",
     description: "Of gross revenue per load, for carriers running under their own MC authority.",
+    highlighted: true,
   },
   {
     title: "Our-MC User",
     rate: "16% – 20%",
     description: "Of gross revenue per load, for drivers operating under Naxora Logistics' MC authority.",
-    highlighted: true,
   },
   {
     title: "Fixed Monthly Rate",
