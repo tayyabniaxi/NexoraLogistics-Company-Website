@@ -22,13 +22,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-8 md:pb-20 md:pt-12">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-400">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-accent-400 sm:px-4 sm:text-xs">
             Strategic Logistics Support Services
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-6 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-4xl lg:text-5xl">
             Professional Dispatch &amp; Logistics Coordination
           </h1>
 
@@ -60,9 +60,9 @@ export default function Hero() {
             {SITE.tagline}
           </p>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-3">
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                 <Truck size={18} className="text-accent-400" />
               </span>
               <div>
@@ -71,7 +71,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                 <Clock3 size={18} className="text-accent-400" />
               </span>
               <div>
@@ -79,8 +79,8 @@ export default function Hero() {
                 <p className="text-xs text-white/60">Dispatch support</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10">
+            <div className="col-span-2 flex items-center justify-center gap-3 sm:col-span-1 sm:justify-start">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                 <ShieldCheck size={18} className="text-accent-400" />
               </span>
               <div>
