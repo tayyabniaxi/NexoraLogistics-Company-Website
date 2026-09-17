@@ -4,7 +4,7 @@ import { SITE, NAV_LINKS, SERVICE_CATEGORIES, SOCIAL_LINKS } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-navy-950 text-white/70">
+    <footer id="contact" className="scroll-mt-20 bg-navy-950 text-white/70 md:scroll-mt-28">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>

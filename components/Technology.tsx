@@ -4,7 +4,7 @@ import { TOOLS } from "@/lib/data";
 
 export default function Technology() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-slate-50 py-14 md:py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
         <div className="text-center lg:text-left">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-600">

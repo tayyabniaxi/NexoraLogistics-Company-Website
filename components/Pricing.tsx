@@ -2,7 +2,7 @@ import { PRICING_PLANS } from "@/lib/data";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24">
+    <section id="pricing" className="scroll-mt-20 py-14 md:scroll-mt-28 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-600">

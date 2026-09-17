@@ -1,10 +1,22 @@
+import Image from "next/image";
 import { Phone, Mail, BadgeCheck } from "lucide-react";
 import { SITE } from "@/lib/data";
 
 export default function Commitment() {
   return (
-    <section className="bg-navy-950 py-24 text-white">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className="relative overflow-hidden bg-navy-950 py-14 text-white md:py-20">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/commitment-truck.jpeg"
+          alt="Box truck ready for dispatch at a logistics yard"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-950/90" />
+      </div>
+
+      <div className="relative mx-auto max-w-4xl px-6 text-center">
         <span className="inline-flex items-center gap-2 rounded-full bg-accent-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-400">
           <BadgeCheck size={14} />
           Ready for Operational Deployment
@@ -25,7 +37,7 @@ export default function Commitment() {
         <p className="mt-4 text-sm leading-relaxed text-white/60">
           Our approach is built on disciplined performance tracking, a
           strongly incentive-driven team culture, and full regulatory
-          compliance — every load, every day.
+          compliance on every load, every day.
         </p>
 
         <p className="mt-8 text-sm font-medium tracking-wide text-accent-400">
@@ -50,7 +62,7 @@ export default function Commitment() {
         </div>
 
         <p className="mt-10 text-sm text-white/50">
-          Thank you for your time and consideration — we look forward to
+          Thank you for your time and consideration. We look forward to
           building a long-term partnership with your organization. Open for
           strategy discussion &amp; questions.
         </p>

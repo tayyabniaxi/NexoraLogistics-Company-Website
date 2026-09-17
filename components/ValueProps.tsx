@@ -3,7 +3,7 @@ import { BENEFITS } from "@/lib/data";
 
 export default function ValueProps() {
   return (
-    <section className="py-24">
+    <section className="py-14 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-600">

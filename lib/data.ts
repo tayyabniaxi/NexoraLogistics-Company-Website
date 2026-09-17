@@ -157,7 +157,7 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     title: "Fixed Monthly Rate",
     rate: "Custom",
-    description: "Negotiated based on fleet size and service requirements — contact us for a quote.",
+    description: "Negotiated based on fleet size and service requirements. Contact us for a quote.",
   },
 ];
 

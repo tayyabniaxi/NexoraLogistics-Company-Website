@@ -3,7 +3,7 @@ import { REQUIREMENTS, SITE } from "@/lib/data";
 
 export default function Requirements() {
   return (
-    <section className="py-24">
+    <section className="py-14 md:py-20">
       <div className="mx-auto max-w-5xl px-6">
         <div className="rounded-3xl bg-gradient-to-br from-navy-900 to-navy-950 px-8 py-14 text-white sm:px-14">
           <div className="mx-auto max-w-2xl text-center">

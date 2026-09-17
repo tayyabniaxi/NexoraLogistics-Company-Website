@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, ArrowRight, ShieldCheck, Truck, Clock3 } from "lucide-react";
 import { SITE } from "@/lib/data";
 
@@ -5,23 +6,23 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-navy-950 text-white"
+      className="relative scroll-mt-20 overflow-hidden bg-navy-950 text-white md:scroll-mt-28"
     >
-      {/* Decorative gradient + pattern, no images required */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-accent-500/20 blur-3xl" />
-        <div className="absolute -bottom-40 -left-24 h-96 w-96 rounded-full bg-navy-600/40 blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
+      {/* Background photo with dark overlay for text contrast */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-truck.jpeg"
+          alt="Semi-truck hauling a loaded flatbed trailer on the highway"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
+        <div className="absolute inset-0 bg-navy-950/55 md:bg-gradient-to-r md:from-navy-950/85 md:via-navy-950/45 md:to-navy-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
         <div className="max-w-2xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-400">
             Strategic Logistics Support Services
@@ -34,21 +35,21 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-lg text-white/70">
             We help streamline your transportation operations, improve load
             planning efficiency, maximize truck utilization, and ensure
-            timely communication between drivers, brokers, and customers —
-            so your business runs on time, every time.
+            timely communication between drivers, brokers, and customers, so
+            your business runs on time, every time.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={SITE.phoneHref}
-              className="flex items-center gap-2 rounded-full bg-accent-500 px-7 py-3.5 text-sm font-semibold text-navy-950 shadow-lg shadow-accent-500/20 transition-colors hover:bg-accent-400"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-accent-500 px-7 py-3.5 text-sm font-semibold text-navy-950 shadow-lg shadow-accent-500/20 transition-colors hover:bg-accent-400 sm:w-auto"
             >
               <Phone size={18} />
               Call Now
             </a>
             <a
               href="#services"
-              className="flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              className="flex w-full items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
             >
               Our Services
               <ArrowRight size={16} />
